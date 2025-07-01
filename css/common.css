@@ -1,0 +1,202 @@
+@charset "UTF-8";
+/*===================================================================
+  start up reset
+===================================================================*/
+body {
+  width: 100vw;
+  background: transparent;
+  font-weight: normal;
+  line-height: 1.6;
+  letter-spacing: 1.4px;
+  font-family: 'Open Sans',sans-serif,YuGothic,"Yu Gothic","游ゴシック体","游ゴシック","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo, Osaka,"ＭＳ Ｐゴシック","MS PGothic","Helvetica Neue",Helvetica,Arial;
+  position: relative;
+  font-size: 16px;
+  color: #444;
+  overflow-x: hidden;
+}
+
+main {
+  width: 100vw;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
+  color: #444;
+}
+
+a, a img, button, [type="button"], [type="reset"], [type="submit"] {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+
+/*===================================================================
+  基本リンク
+===================================================================*/
+a {
+  text-decoration: none;
+}
+
+a img {
+  -webkit-transition: opacity 0.15s ease-out;
+  transition: opacity 0.15s ease-out;
+}
+
+button:hover {
+  opacity: 0.6;
+}
+
+/*===================================================================
+  ヘッダー
+===================================================================*/
+.header {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.64);
+  padding: 2% 0;
+  position: fixed;
+  z-index: 100;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header_layout {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo_wrap {
+  width: 20%;
+}
+
+.nav {
+  width: 80%;
+}
+
+.nav_wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav_wrap li {
+  display: block;
+  padding: 1% 4%;
+  color: #CE7F7F;
+}
+
+.nav_wrap a:hover {
+  color: rgb(152, 109, 109);
+}
+
+.nav_wrap li:last-child {
+  background: #fff;
+  box-shadow: 2px 3px 8px rgba(165, 123, 123, 0.3);
+  border-radius: 32px;
+  align-items: center;
+  margin-left: 2%;
+}
+
+.nav_wrap li:last-child:hover {
+  background-color: rgb(236, 154, 154);
+  color: #fff;
+}
+
+/* モバイル */
+@media screen and (max-width: 480px) {
+  .container {
+    width: 94%;
+  }
+
+  .header {
+    width: 100%;
+    padding: 0;
+  }
+
+  .header_layout {
+    width: 100%;
+    display: block;
+  }
+
+  .logo_wrap {
+    width: 48%;
+    padding: 3% 0 3% 3%;
+  }
+
+  .nav {
+    display: none;
+  }
+}
+
+/* scroll_up */
+.scroll_up {
+  transition: 0.8s ease-in-out;
+  transform: translateY(30px);
+  opacity: 0;
+}
+.scroll_up.on {
+  transform: translateY(0);
+  opacity: 1.0;
+}
+
+/*===================================================================
+	フッター
+===================================================================*/
+
+.footer {
+  width: 100vw;
+  padding: 4% 0;
+  text-align: center;
+}
+
+.footer_logo {
+  width: 20%;
+  margin: 0 auto 2%;
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 8% 0;
+  }
+
+  .footer_logo {
+    width: 56%;
+    margin: 0 auto 3%;
+  }
+}
+
+
+/*===================================================================
+	メイン
+===================================================================*/
+
+/* モバイル */
+
+
+
+
+/* タブレット */
+@media screen and (min-width: 600px) {
+
+}
+
+
+
+
+
+  /* PC */
+@media screen and (min-width: 1025px) {
+
+}
