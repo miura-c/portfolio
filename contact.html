@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Miu Create's Portfolio</title>
+        <meta name="description" content="サービスの想いやビジョンを大切にし、お客様と一緒に質の高いデザインを作ることを心がけています。
+        ビジネスをしている方々に寄り添いながら、その価値をしっかり伝えるWebサイト（ホームページ）を目指します。" />
+        <meta name="format-detection" content="telephone=no" />
+
+        <link rel="icon" href="img/favicon.png" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="img/favicon.png" />
+
+        <meta property="og:site_name" content="Miu Create's Portfolio" />
+        <meta property="og:url" content="https://portfolio.mc-design.website/contat.html" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Miu Create's Portfolio" />
+        <meta property="og:description" content="サービスの想いやビジョンを大切にし、お客様と一緒に質の高いデザインを作ることを心がけています。
+        ビジネスをしている方々に寄り添いながら、その価値をしっかり伝えるWebサイト（ホームページ）を目指します。" />
+        <meta property="og:image" content="https://portfolio.mc-design.website/img/ogp-min.png" />
+        <meta property="og:locale" content="ja_JP" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:description" content="サービスの想いやビジョンを大切にし、お客様と一緒に質の高いデザインを作ることを心がけています。
+        ビジネスをしている方々に寄り添いながら、その価値をしっかり伝えるWebサイト（ホームページ）を目指します。" />
+        <meta name="twitter:image:src" content="https://portfolio.mc-design.website/img/ogp-min.png" />
+
+        <link rel="stylesheet" href="/css/destyle.css">
+        <link rel="stylesheet" href="/css/common.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <header id="header"></header>
+    <main class="main main_contact">
+        <div class="contact_header">
+            <img src="/img/Conract.svg" alt="contact">
+        </div>
+        <div class="breadcrumbs_list">
+            <div class="container">
+                <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li itemprop="itemListElement" itemscope
+                        itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="index.html">
+                        <span itemprop="name">HOME</span>
+                        </a>
+                        <meta itemprop="position" content="1" />
+                    </li>
+                    <li itemprop="itemListElement" itemscope
+                        itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="contact.html">
+                        <span itemprop="name">contact</span>
+                        </a>
+                        <meta itemprop="position" content="2" />
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <section id="contact_form" class="section_contact_form">
+            <div class="container">
+                <h1 class="contact_title">
+                    お問い合わせはこちらのフォームからお願いします。
+                </h1>
+                <p class="contact_subTitle">
+                    お問い合わせや相談は下記フォームより、お気軽にご連絡ください。<br>
+                    3営業日以内にご返信させていただきます。
+                </p>
+
+                <form id="my-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdmTKIhdXYFjH-yl9-RGdibuU33H6amB_Y1-DewS9EzbPDRcA/formResponse"
+                    method="post"
+                    target="hidden_iframe"
+                    onsubmit="submitted=true;">
+
+                    <div class="input-field">
+                        <label for="company-name" class="form-item">会社名</label><span class="required-text">必須</span><br>
+                        <input id="company-name" class="input-style" placeholder="例）株式会社〇〇" type="text" name="entry.1582016541" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="your-name" class="form-item">氏名</label><span class="required-text">必須</span><br>
+                        <input id="your-name" class="input-style" placeholder="例）山田太郎" type="text" name="entry.2039731900" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="your-email" class="form-item">メールアドレス</label><span class="required-text">必須</span><br>
+                        <input id="your-email" class="input-style" placeholder="例）example@marumaru.co.jp" type="email" name="entry.1865456169" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="company-post" class="form-item">役職</label><br>
+                        <input id="company-post" class="input-style" type="text" name="entry.1527848585">
+                    </div>
+                    <div class="input-field">
+                        <label for="company-tel" class="form-item">電話番号</label><br>
+                        <input id="company-tel" class="input-style" placeholder="例）0301234567" type="tel" name="entry.1595046356">
+                    </div>
+                    <div class="input-field">
+                        <label for="your-message" class="form-item">お問い合わせ内容</label><span class="required-text">必須</span><br>
+                        <textarea id="your-message" class="message-textarea" placeholder="例）プロジェクトについての相談" name="entry.288491007" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">送信</button>
+                </form>
+                <iframe
+                name="hidden_iframe"
+                id="hidden_iframe"
+                style="display: none"
+                onload="if(submitted){window.location='thanks.html';}"
+            ></iframe>
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_logo">
+                <a href="index.html"><img src="/img/logo-min.png" alt="Miu Create site logo"></a>
+            </div>
+            <small>
+                © 2022 miu create
+            </small>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
